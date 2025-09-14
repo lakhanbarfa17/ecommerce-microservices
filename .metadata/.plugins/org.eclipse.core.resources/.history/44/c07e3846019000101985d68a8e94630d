@@ -1,0 +1,9 @@
+package com.barfatech.productservice.dto;
+
+import java.math.BigDecimal;
+
+public class ProductResponse {
+	private String name;
+	private String description;
+	private BigDecimal price;
+}

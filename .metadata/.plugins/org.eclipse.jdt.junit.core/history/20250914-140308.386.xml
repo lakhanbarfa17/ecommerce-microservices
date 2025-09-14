@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ProductServiceApplicationTests" project="product-service" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.barfatech.productservice.ProductServiceApplicationTests" time="0.0" displayname="ProductServiceApplicationTests" uniqueid="[engine:junit-jupiter]/[class:com.barfatech.productservice.ProductServiceApplicationTests]">
+    <testcase name="shouldCreateProduct" classname="com.barfatech.productservice.ProductServiceApplicationTests" time="0.0" displayname="shouldCreateProduct()" uniqueid="[engine:junit-jupiter]/[class:com.barfatech.productservice.ProductServiceApplicationTests]/[method:shouldCreateProduct()]">
+      <error>java.lang.ExceptionInInitializerError&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)&#13;
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+Caused by: java.lang.IllegalStateException: Could not find a valid Docker environment. Please see logs and check configuration&#13;
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.lambda$getFirstValidStrategy$7(DockerClientProviderStrategy.java:274)&#13;
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)&#13;
+	at org.testcontainers.dockerclient.DockerClientProviderStrategy.getFirstValidStrategy(DockerClientProviderStrategy.java:265)&#13;
+	at org.testcontainers.DockerClientFactory.getOrInitializeStrategy(DockerClientFactory.java:154)&#13;
+	at org.testcontainers.DockerClientFactory.client(DockerClientFactory.java:196)&#13;
+	at org.testcontainers.DockerClientFactory$1.getDockerClient(DockerClientFactory.java:108)&#13;
+	at com.github.dockerjava.api.DockerClientDelegate.authConfig(DockerClientDelegate.java:109)&#13;
+	at org.testcontainers.containers.GenericContainer.start(GenericContainer.java:321)&#13;
+	at com.barfatech.productservice.ProductServiceApplicationTests.&lt;clinit&gt;(ProductServiceApplicationTests.java:38)&#13;
+	... 5 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

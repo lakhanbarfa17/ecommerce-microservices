@@ -1,0 +1,5 @@
+package com.barfatech.productservice.dto;
+
+public class ProductRequest {
+
+}

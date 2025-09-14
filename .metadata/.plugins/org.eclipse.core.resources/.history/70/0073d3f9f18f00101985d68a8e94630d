@@ -1,0 +1,6 @@
+spring.application.name=product-service
+
+
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port=
+spring.data.mongodb.database=

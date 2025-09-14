@@ -1,0 +1,7 @@
+package com.barfatech.productservice.model;
+
+
+
+public class Product {
+
+}

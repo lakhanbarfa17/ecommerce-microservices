@@ -1,0 +1,28 @@
+package com.barfatech.productservice.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.barfatech.productservice.dto.ProductRequest;
+import com.barfatech.productservice.model.Product;
+import com.barfatech.productservice.repository.ProductRepository;
+
+@Service
+public class ProductService {
+	
+	private ProductRepository productRepository;
+	
+	public ProductService(ProductRepository productRepository) {
+		this.productRepository = productRepository;
+	}
+	
+	public void createProduct(ProductRequest productRequest) {
+		Product product = Product.builder()
+				.name(productRequest.getName())
+				.description(productRequest.getDescription())
+				.price(productRequest.getPrice())
+				.build();
+		
+		productRepository.save(product);
+	}
+}
