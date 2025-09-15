@@ -1,5 +1,0 @@
-package com.barfatech.productservice.dto;
-
-public class ProductResponse {
-
-}
