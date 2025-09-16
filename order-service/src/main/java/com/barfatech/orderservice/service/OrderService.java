@@ -2,12 +2,10 @@ package com.barfatech.orderservice.service;
 
 import java.util.List;
 import java.util.UUID;
-import java.util.stream.Stream;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
-import org.springframework.web.util.UriBuilder;
 
 import com.barfatech.orderservice.dto.InventoryResponse;
 import com.barfatech.orderservice.dto.OrderLineItemsDto;
@@ -17,7 +15,6 @@ import com.barfatech.orderservice.model.OrderLineItems;
 import com.barfatech.orderservice.repository.OrderRepository;
 
 import lombok.RequiredArgsConstructor;
-import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.barfatech.inventoryservice.dto.InventoryResponse;
-import com.barfatech.inventoryservice.model.Inventory;
 import com.barfatech.inventoryservice.repository.InventoryRepository;
 
 import lombok.RequiredArgsConstructor;
