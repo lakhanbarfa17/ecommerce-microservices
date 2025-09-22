@@ -1,4 +1,4 @@
-package com.barfatech.apigateway;
+package com.barfatech.apigateway.route;
 
 
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class ApiGatewayConfiguration {
+public class ApiGatewayRouteConfiguration {
 	
 	@Bean
 	public RouteLocator gatewayRouter(RouteLocatorBuilder builder) {

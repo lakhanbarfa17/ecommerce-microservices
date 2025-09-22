@@ -1,4 +1,4 @@
-package com.barfatech.apigateway;
+package com.barfatech.apigateway.loggingfilter;
 
 
 import org.slf4j.Logger;
